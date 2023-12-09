@@ -8,7 +8,7 @@ export class Configuration {
     static get envs() {
         return () => ({
             environment: process.env.NODE_ENV || 'Development',
-            port: process.env.PORT || 5000,
+            port: process.env.NODE_PORT || 3000,
             timezone: 'America/Sao_Paulo',
             database: {
                 mongoDbUri: process.env.MONGODB_URI
